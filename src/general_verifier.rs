@@ -17,7 +17,7 @@ pub enum VerifierModule<'a, F:Field> {
 }
 
 #[derive(Debug)]
-pub struct VerifierMessages<F: Field>(Vec<F>);
+pub struct VerifierMessages<F: Field>(pub Vec<F>);
 
 pub struct GeneralVerifier<'a, F: Field> {
     pub model_exec: ModelExecution<F>,
